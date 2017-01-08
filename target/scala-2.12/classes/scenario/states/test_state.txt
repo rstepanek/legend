@@ -1,0 +1,12 @@
+Name: State:test
+RequireTags: testing,one
+BannedTags: production
+Duration: 1-2 Days
+Yields: (successful test, add, 1)
+Cost: None
+PoolRestrictions: None
+TimeFreq: None
+Message_on_Start: Test has began.
+Message_on_Exit: Test has ended.
+Message_On_Entrance: Initialized.
+Concurrent: True
