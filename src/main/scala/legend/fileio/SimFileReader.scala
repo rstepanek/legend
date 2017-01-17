@@ -3,6 +3,18 @@ package legend.fileio
 import scala.io.Source
 import scala.collection.mutable.Map
 
+
+/**
+  * A class to represent load various text files into the simulator.
+  *
+  * All params subject to change, work in progress.
+  *
+  * @author Ryan Stepanek
+  * @version 0.1
+  * @todo Add more functionality.
+  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * information.
+  */
 object SimFileReader{
   val fdir = "resources/scenario/states"
   val tfile =  "/scenario/states/test_state.txt"

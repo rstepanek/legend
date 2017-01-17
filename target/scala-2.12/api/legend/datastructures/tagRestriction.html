@@ -109,62 +109,62 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="legend">legend</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Area.html" title=""></a>
-                        <a href="Area.html" title="">
+                        <a class="class" href="Area.html" title="A class representing a two dimensional rectangular area in space."></a>
+                        <a href="Area.html" title="A class representing a two dimensional rectangular area in space.">
                           Area
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Entity.html" title=""></a>
-                        <a href="Entity.html" title="">
+                        <a class="class" href="Entity.html" title="A thin class representing an Entity."></a>
+                        <a href="Entity.html" title="A thin class representing an Entity.">
                           Entity
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Point.html" title="Created by boop on 1/7/2017."></a>
-                        <a href="Point.html" title="Created by boop on 1/7/2017.">
+                        <a class="class" href="Point.html" title="A class representing a single point in space."></a>
+                        <a href="Point.html" title="A class representing a single point in space.">
                           Point
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Pool.html" title=""></a>
-                        <a href="Pool.html" title="">
+                        <a class="class" href="Pool.html" title="The primary numerical datastructure of the simulation."></a>
+                        <a href="Pool.html" title="The primary numerical datastructure of the simulation.">
                           Pool
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Process.html" title=""></a>
-                        <a href="Process.html" title="">
+                        <a class="class" href="Process.html" title="A class representing a process which is a collection of states."></a>
+                        <a href="Process.html" title="A class representing a process which is a collection of states.">
                           Process
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="Restriction.html" title=""></a>
-                        <a href="Restriction.html" title="">
+                        <a class="trait" href="Restriction.html" title="A trait to assist with processing of restrictions."></a>
+                        <a href="Restriction.html" title="A trait to assist with processing of restrictions.">
                           Restriction
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="State.html" title=""></a>
-                        <a href="State.html" title="">
+                        <a class="class" href="State.html" title="A class representing a process which is a collection of states."></a>
+                        <a href="State.html" title="A class representing a process which is a collection of states.">
                           State
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="TimeFreq.html" title=""></a>
-                        <a href="TimeFreq.html" title="">
+                        <a class="class" href="TimeFreq.html" title="A class representing a time frequency."></a>
+                        <a href="TimeFreq.html" title="A class representing a time frequency.">
                           TimeFreq
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="poolRestriction.html" title=""></a>
-                        <a href="poolRestriction.html" title="">
+                        <a class="class" href="poolRestriction.html" title="A restriction for pool values, uses common comparators to determine if an entity meets the restriction."></a>
+                        <a href="poolRestriction.html" title="A restriction for pool values, uses common comparators to determine if an entity meets the restriction.">
                           poolRestriction
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title=""></a>
-                        <a href="" title="">
+                        <a class="class" href="" title="A restriction for pool values, uses common comparators to determine if an entity meets the restriction."></a>
+                        <a href="" title="A restriction for pool values, uses common comparators to determine if an entity meets the restriction.">
                           tagRestriction
                         </a>
                       </li>
@@ -190,12 +190,14 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">tagRestriction</span><span class="params">(<span name="restrictionName">restrictionName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argument">argument: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tagRestr">tagRestr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Restriction.html" class="extype" name="legend.datastructures.Restriction">Restriction</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">tagRestriction</span><span class="params">(<span name="restrictionNames">restrictionNames: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="argument">argument: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tagRestr">tagRestr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Restriction.html" class="extype" name="legend.datastructures.Restriction">Restriction</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A restriction for pool values, uses common comparators to determine if an entity meets the restriction.</p><p>All params subject to change, work in progress.
+</p></div><dl class="paramcmts block"><dt class="param">restrictionNames</dt><dd class="cmt"><p>A list of applicable tag group names against which the restriction can be checked.</p></dd><dt class="param">argument</dt><dd class="cmt"><p>The type of camparison, currently &quot;has&quot; or &quot;lacks&quot;.</p></dd><dt class="param">tagRestr</dt><dd class="cmt"><p>The tag to checkout for the presence or absence of.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Make pool names have a meta type to allow comparison against pool types rather than specific names.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
+information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -245,10 +247,10 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="legend.datastructures.tagRestriction#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(restrictionName:String,argument:String,tagRestr:String):legend.datastructures.tagRestriction"></a><a id="&lt;init&gt;:tagRestriction"></a>
+              <ol><li name="legend.datastructures.tagRestriction#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(restrictionNames:List[String],argument:String,tagRestr:String):legend.datastructures.tagRestriction"></a><a id="&lt;init&gt;:tagRestriction"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/tagRestriction.html#&lt;init&gt;(restrictionName:String,argument:String,tagRestr:String):legend.datastructures.tagRestriction" title="Permalink">
+      <a href="../../legend/datastructures/tagRestriction.html#&lt;init&gt;(restrictionNames:List[String],argument:String,tagRestr:String):legend.datastructures.tagRestriction" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -257,10 +259,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">tagRestriction</span><span class="params">(<span name="restrictionName">restrictionName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argument">argument: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tagRestr">tagRestr: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">tagRestriction</span><span class="params">(<span name="restrictionNames">restrictionNames: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="argument">argument: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tagRestr">tagRestr: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       
-      
+      <p class="shortcomment cmt">A poolRestriction requires a poolName to compare against, a type of comparator in the form of a string, and a value to compare against.</p><div class="fullcomment"><div class="comment cmt"><p>A poolRestriction requires a poolName to compare against, a type of comparator in the form of a string, and a value to compare against.</p></div><dl class="paramcmts block"><dt class="param">restrictionNames</dt><dd class="cmt"><p>A list of applicable tag group names against which the restriction can be checked.</p></dd><dt class="param">argument</dt><dd class="cmt"><p>The type of camparison, currently &quot;has&quot; or &quot;lacks&quot;.</p></dd><dt class="param">tagRestr</dt><dd class="cmt"><p>The tag to checkout for the presence or absence of.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -443,10 +445,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="legend.datastructures.tagRestriction#meetRestriction" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="meetRestriction(tags:String*):Boolean"></a><a id="meetRestriction(String*):Boolean"></a>
+    </li><li name="legend.datastructures.tagRestriction#meetRestriction" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="meetRestriction(tags:List[String]):Boolean"></a><a id="meetRestriction(List[String]):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/tagRestriction.html#meetRestriction(tags:String*):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/tagRestriction.html#meetRestriction(tags:List[String]):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -455,10 +457,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">meetRestriction</span><span class="params">(<span name="tags">tags: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">meetRestriction</span><span class="params">(<span name="tags">tags: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">tags</dt><dd class="cmt"><p>The tags against which to check the restriction</p></dd><dt>returns</dt><dd class="cmt"><p>Returns a Boolean result indicating if the restriction was met or failed.</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -507,10 +509,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="legend.datastructures.tagRestriction#restrictionName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="restrictionName:String"></a>
+    </li><li name="legend.datastructures.tagRestriction#restrictionNames" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="restrictionNames:List[String]"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/tagRestriction.html#restrictionName:String" title="Permalink">
+      <a href="../../legend/datastructures/tagRestriction.html#restrictionNames:List[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -519,7 +521,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">restrictionName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">restrictionNames</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       

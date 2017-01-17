@@ -1,13 +1,21 @@
 package legend.datastructures
 
 
-/*
-The base numeric class of the simulator. A pool represents a group
-of finite resources that are modified over time, but above or below
-a set amount. Currently, only Int pools are supported.
-
-TODO: Use scala's Numeric to make this class handle any generic number
- */
+/**
+  * The primary numerical datastructure of the simulation. A pool represents a real world or abstract resource such as fuel, cargo, durability, etc...
+  *
+  * All params subject to change, work in progress.
+  *
+  * @constructor Create a new pool with an initial value and (optionally) a max and min value.
+  * @param value The initial value of the pool.
+  * @param max The maximum possible value of the pool.
+  * @param min The minimum possible value of the pool.
+  * @author Ryan Stepanek
+  * @version 0.1
+  * @todo Use scala's Numeric to make this class handle any generic number.
+  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * information.
+  */
 class Pool(var value: Int, var max:Int=Int.MaxValue: Int, var min:Int=0) {
   def inc: Unit ={
     value = if(( value+1 )<= max) value+1 else value

@@ -1,1 +1,21 @@
-[0m[[0mdebug[0m] [0mUptodate: C:\Users\boop\Desktop\legend\target\scala-2.12\api[0m
+[0m[[0minfo[0m] [0mMain Scala API documentation to C:\Users\boop\Desktop\legend\target\scala-2.12\api...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
+[0m[[0mdebug[0m] [0mCalling Scaladoc with arguments:[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\target\scala-2.12\api[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_111\lib\resources.jar;C:\Program Files\Java\jre1.8.0_111\lib\rt.jar;C:\Program Files\Java\jre1.8.0_111\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_111\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_111\lib\jce.jar;C:\Program Files\Java\jre1.8.0_111\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_111\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_111\classes;C:\Users\boop\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	dummy_26dc13c0[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Entity.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Locations.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Pool.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Process.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Restriction.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\State.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Time.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\events\SimEvents.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\fileio\SimFileReader.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\parsers\datastruct.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\traits\physicaltraits.scala[0m
+[0m[[0minfo[0m] [0mMain Scala API documentation successful.[0m
