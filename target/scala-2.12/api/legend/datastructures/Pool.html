@@ -115,6 +115,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Duration.html" title="A class representing the duration of an event."></a>
+                        <a href="Duration.html" title="A class representing the duration of an event.">
+                          Duration
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Entity.html" title="A thin class representing an Entity."></a>
                         <a href="Entity.html" title="A thin class representing an Entity.">
                           Entity
@@ -196,7 +202,7 @@
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The primary numerical datastructure of the simulation. A pool represents a real world or abstract resource such as fuel, cargo, durability, etc...</p><p>All params subject to change, work in progress.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Use scala's Numeric to make this class handle any generic number.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.2</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
 information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -248,9 +254,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="legend.datastructures.Pool#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(value:Int,max:Int,min:Int):legend.datastructures.Pool"></a><a id="&lt;init&gt;:Pool"></a>
+      <a id="&lt;init&gt;(value:Double,max:Double,min:Double):legend.datastructures.Pool"></a><a id="&lt;init&gt;:Pool"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#&lt;init&gt;(value:Int,max:Int,min:Int):legend.datastructures.Pool" title="Permalink">
+      <a href="../../legend/datastructures/Pool.html#&lt;init&gt;(value:Double,max:Double,min:Double):legend.datastructures.Pool" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -259,7 +265,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Pool</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Int">Int</span></span>, <span name="max">max: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Int.MaxValue: Int</span></span>, <span name="min">min: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span>
+        <span class="name">Pool</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Double">Double</span></span>, <span name="max">max: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">Double.MaxValue</span></span>, <span name="min">min: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0</span></span>)</span>
       </span>
       
       <p class="shortcomment cmt">Create a new pool with an initial value and (optionally) a max and min value.</p><div class="fullcomment"><div class="comment cmt"><p>Create a new pool with an initial value and (optionally) a max and min value.</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>The initial value of the pool.</p></dd><dt class="param">max</dt><dd class="cmt"><p>The maximum possible value of the pool.</p></dd><dt class="param">min</dt><dd class="cmt"><p>The minimum possible value of the pool.</p></dd></dl></div>
@@ -305,6 +311,102 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="legend.datastructures.Pool#*" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="*(n:Double):Unit"></a><a id="*(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#*(n:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Pool#+" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="+(n:Double):Unit"></a><a id="+(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#+(n:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Pool#++" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="++():Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#++():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus$plus" class="name">++</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Pool#-" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-(n:Double):Unit"></a><a id="-(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#-(n:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Pool#--" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="--():Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#--():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$minus" class="name">--</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Pool#/" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="/(n:Double):Unit"></a><a id="/(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Pool.html#/(n:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
@@ -321,22 +423,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="legend.datastructures.Pool#add" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="add(n:Int):Unit"></a><a id="add(Int):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#add(n:Int):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">add</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
     </li><li name="legend.datastructures.Pool#add" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="add(n:Double):Unit"></a><a id="add(Double):Unit"></a>
       <span class="permalink">
@@ -420,22 +506,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       <span class="symbol">
         <span class="name">div</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.Pool#div" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="div(n:Int):Unit"></a><a id="div(Int):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#div(n:Int):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">div</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       
@@ -525,22 +595,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       
-    </li><li name="legend.datastructures.Pool#hasCapacity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasCapacity(n:Int):Boolean"></a><a id="hasCapacity(Int):Boolean"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#hasCapacity(n:Int):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasCapacity</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      
     </li><li name="legend.datastructures.Pool#hasRemaining" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="hasRemaining(n:Double):Boolean"></a><a id="hasRemaining(Double):Boolean"></a>
       <span class="permalink">
@@ -554,22 +608,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       <span class="symbol">
         <span class="name">hasRemaining</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.Pool#hasRemaining" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasRemaining(n:Int):Boolean"></a><a id="hasRemaining(Int):Boolean"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#hasRemaining(n:Int):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasRemaining</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       
@@ -622,9 +660,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="legend.datastructures.Pool#max" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="max:Int"></a>
+      <a id="max:Double"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#max:Int" title="Permalink">
+      <a href="../../legend/datastructures/Pool.html#max:Double" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -633,14 +671,14 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">max</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">max</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       
       
     </li><li name="legend.datastructures.Pool#min" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="min:Int"></a>
+      <a id="min:Double"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#min:Int" title="Permalink">
+      <a href="../../legend/datastructures/Pool.html#min:Double" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -649,7 +687,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">min</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">min</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       
       
@@ -666,22 +704,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       <span class="symbol">
         <span class="name">mul</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.Pool#mul" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="mul(n:Int):Unit"></a><a id="mul(Int):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#mul(n:Int):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">mul</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       
@@ -749,22 +771,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       
-    </li><li name="legend.datastructures.Pool#sub" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sub(n:Int):Unit"></a><a id="sub(Int):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#sub(n:Int):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sub</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -798,9 +804,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="legend.datastructures.Pool#value" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="value:Int"></a>
+      <a id="value:Double"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Pool.html#value:Int" title="Permalink">
+      <a href="../../legend/datastructures/Pool.html#value:Double" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -809,7 +815,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">value</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">value</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       
       

@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\temp\src\main\resources\scenario,C:\Users\boop\Desktop\temp\target\scala-2.12\classes\scenario)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\temp\src\main\resources\scenario\states,C:\Users\boop\Desktop\temp\target\scala-2.12\classes\scenario\states)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\temp\src\main\resources\scenario\states\test_state.txt,C:\Users\boop\Desktop\temp\target\scala-2.12\classes\scenario\states\test_state.txt)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\legend\src\main\resources\scenario,C:\Users\boop\Desktop\legend\target\scala-2.12\classes\scenario)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\legend\src\main\resources\scenario\states,C:\Users\boop\Desktop\legend\target\scala-2.12\classes\scenario\states)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\boop\Desktop\legend\src\main\resources\scenario\states\test_state.txt,C:\Users\boop\Desktop\legend\target\scala-2.12\classes\scenario\states\test_state.txt)[0m

@@ -33,7 +33,7 @@ object SimFileReader{
 
     for(line <- Source.fromFile(targetFile).getLines()){
       val split_point = line.indexOf(key_value_sep)
-      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length-1))
+      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length))
     }
 
     return file_args
@@ -46,7 +46,7 @@ object SimFileReader{
     val file_args: Map[String,String] = Map[String,String]()
     lines.foreach(line => {
       val split_point = line.indexOf(key_value_sep)
-      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length-1))
+      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length))
     })
     return file_args
   }

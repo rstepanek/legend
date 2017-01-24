@@ -113,6 +113,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Duration.html" title="A class representing the duration of an event."></a>
+                        <a href="Duration.html" title="A class representing the duration of an event.">
+                          Duration
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Entity.html" title="A thin class representing an Entity."></a>
                         <a href="Entity.html" title="A thin class representing an Entity.">
                           Entity
@@ -296,6 +302,25 @@
       <p class="shortcomment cmt">A class representing a two dimensional rectangular area in space.</p><div class="fullcomment"><div class="comment cmt"><p>A class representing a two dimensional rectangular area in space. This is a useful construct for restraining certain pools are processes to specific geographical areas.</p><p>All params subject to change, work in progress.
 </p></div><dl class="paramcmts block"><dt class="param">xmin</dt><dd class="cmt"><p>The minimum x (longitude) value of the area.</p></dd><dt class="param">ymin</dt><dd class="cmt"><p>The minimum y (latitude) value of the area.</p></dd><dt class="param">xmax</dt><dd class="cmt"><p>The maximum y (latitude) value of the area.</p></dd><dt class="param">ymax</dt><dd class="cmt"><p>The maximum x (longitude) value of the area.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
 information.</p></span></dd></dl></div>
+    </li><li name="legend.datastructures.Duration" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DurationextendsProductwithSerializable"></a><a id="Duration:Duration"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/index.html#DurationextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="A class representing the duration of an event." href="Duration.html">
+              <span class="name">Duration</span>
+            </a><span class="params">(<span name="min">min: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">1</span></span>, <span name="max">max: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">A class representing the duration of an event.</p><div class="fullcomment"><div class="comment cmt"><p>A class representing the duration of an event.</p><p>All params subject to change, work in progress.
+</p></div><dl class="paramcmts block"><dt class="param">min</dt><dd class="cmt"><p>The minimum time of the duration in milliseconds.</p></dd><dt class="param">max</dt><dd class="cmt"><p>The maximum time of the duration in milliseconds.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;</p></span></dd></dl></div>
     </li><li name="legend.datastructures.Entity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="EntityextendsProductwithSerializable"></a><a id="Entity:Entity"></a>
       <span class="permalink">
@@ -354,7 +379,7 @@ information.</p></span></dd></dl></div>
       </span>
       
       <p class="shortcomment cmt">The primary numerical datastructure of the simulation.</p><div class="fullcomment"><div class="comment cmt"><p>The primary numerical datastructure of the simulation. A pool represents a real world or abstract resource such as fuel, cargo, durability, etc...</p><p>All params subject to change, work in progress.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Use scala's Numeric to make this class handle any generic number.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.2</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
 information.</p></span></dd></dl></div>
     </li><li name="legend.datastructures.Process" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ProcessextendsAnyRef"></a><a id="Process:Process"></a>

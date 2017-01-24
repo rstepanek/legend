@@ -115,8 +115,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Duration.html" title="A class representing the duration of an event."></a>
-                        <a href="Duration.html" title="A class representing the duration of an event.">
+                        <a class="class" href="" title="A class representing the duration of an event."></a>
+                        <a href="" title="A class representing the duration of an event.">
                           Duration
                         </a>
                       </li><li class="current-entities indented2">
@@ -151,8 +151,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title="A class representing a process which is a collection of states."></a>
-                        <a href="" title="A class representing a process which is a collection of states.">
+                        <a class="class" href="State.html" title="A class representing a process which is a collection of states."></a>
+                        <a href="State.html" title="A class representing a process which is a collection of states.">
                           State
                         </a>
                       </li><li class="current-entities indented2">
@@ -182,8 +182,8 @@
       <div id="definition">
         <div class="big-circle class">c</div>
         <p id="owner"><a href="../index.html" class="extype" name="legend">legend</a>.<a href="index.html" class="extype" name="legend.datastructures">datastructures</a></p>
-        <h1>State<span class="permalink">
-      <a href="../../legend/datastructures/State.html" title="Permalink">
+        <h1>Duration<span class="permalink">
+      <a href="../../legend/datastructures/Duration.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -196,14 +196,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">State</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cost">cost: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>]</span>, <span name="Duration">Duration: <span class="extype" name="scala.Long">Long</span></span>, <span name="on_start_message">on_start_message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="on_exit_message">on_exit_message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="on_entrance">on_entrance: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Duration</span><span class="params">(<span name="min">min: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">1</span></span>, <span name="max">max: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class representing a process which is a collection of states. Each process must have at least on entry state and may have at least one exit state.</p><p>All params subject to change, work in progress.
-</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the state.</p></dd><dt class="param">cost</dt><dd class="cmt"><p>A map of the pool name</p></dd><dt class="param">Duration</dt><dd class="cmt"><p>The duration of the state in sim-units (default: milliseconds)</p></dd><dt class="param">on_start_message</dt><dd class="cmt"><p>A string message thrown when the entity activates the state.</p></dd><dt class="param">on_exit_message</dt><dd class="cmt"><p>A string message thrown when the entity leaves the state.</p></dd><dt class="param">on_entrance</dt><dd class="cmt"><p>A string message thrown when the entity initializes the state (it can only be thrown once, even if the entity enters the state several times, consecutively).</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Change cost to use pool types rather than specific pool names.</p></span><span class="cmt"><p>Finish this class, implement functionality through graphing library.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
-information.</p></span></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class representing the duration of an event.</p><p>All params subject to change, work in progress.
+</p></div><dl class="paramcmts block"><dt class="param">min</dt><dd class="cmt"><p>The minimum time of the duration in milliseconds.</p></dd><dt class="param">max</dt><dd class="cmt"><p>The maximum time of the duration in milliseconds.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -233,7 +232,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="legend.datastructures.State"><span>State</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="legend.datastructures.Duration"><span>Duration</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -253,10 +252,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="legend.datastructures.State#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(name:String,cost:Map[String,Int],Duration:Long,on_start_message:Option[String],on_exit_message:Option[String],on_entrance:Option[String]):legend.datastructures.State"></a><a id="&lt;init&gt;:State"></a>
+              <ol><li name="legend.datastructures.Duration#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(min:Long,max:Long):legend.datastructures.Duration"></a><a id="&lt;init&gt;:Duration"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#&lt;init&gt;(name:String,cost:Map[String,Int],Duration:Long,on_start_message:Option[String],on_exit_message:Option[String],on_entrance:Option[String]):legend.datastructures.State" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#&lt;init&gt;(min:Long,max:Long):legend.datastructures.Duration" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -265,10 +264,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">State</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cost">cost: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>]</span>, <span name="Duration">Duration: <span class="extype" name="scala.Long">Long</span></span>, <span name="on_start_message">on_start_message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="on_exit_message">on_exit_message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="on_entrance">on_entrance: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span>
+        <span class="name">Duration</span><span class="params">(<span name="min">min: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">1</span></span>, <span name="max">max: <span class="extype" name="scala.Long">Long</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the state.</p></dd><dt class="param">cost</dt><dd class="cmt"><p>A map of the pool name</p></dd><dt class="param">Duration</dt><dd class="cmt"><p>The duration of the state in sim-units (default: milliseconds)</p></dd><dt class="param">on_start_message</dt><dd class="cmt"><p>A string message thrown when the entity activates the state.</p></dd><dt class="param">on_exit_message</dt><dd class="cmt"><p>A string message thrown when the entity leaves the state.</p></dd><dt class="param">on_entrance</dt><dd class="cmt"><p>A string message thrown when the entity initializes the state (it can only be thrown once, even if the entity enters the state several times, consecutively).</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">min</dt><dd class="cmt"><p>The minimum time of the duration in milliseconds.</p></dd><dt class="param">max</dt><dd class="cmt"><p>The maximum time of the duration in milliseconds.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -282,7 +281,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -298,7 +297,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html###():Int" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -314,7 +313,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -327,26 +326,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="legend.datastructures.State#Duration" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Duration:Long"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/State.html#Duration:Long" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Duration</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
-      </span>
-      
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -362,7 +345,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#clone():Object" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -381,26 +364,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="legend.datastructures.State#cost" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cost:Map[String,Int]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/State.html#cost:Map[String,Int]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cost</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>]</span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -416,7 +383,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#finalize():Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -438,7 +405,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#getClass():Class[_]" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -451,10 +418,26 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="legend.datastructures.Duration#getDuration" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getDuration():Long"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Duration.html#getDuration():Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDuration</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns a random long between the minimum anc maximum possible duration (inclusive).</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -467,10 +450,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="legend.datastructures.State#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="name:String"></a>
+    </li><li name="legend.datastructures.Duration#max" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="max:Long"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#name:String" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#max:Long" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -479,14 +462,30 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">max</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Duration#min" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="min:Long"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Duration.html#min:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">min</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       
       
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -502,7 +501,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#notify():Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -518,7 +517,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#notifyAll():Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -531,58 +530,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="legend.datastructures.State#on_entrance" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="on_entrance:Option[String]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/State.html#on_entrance:Option[String]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">on_entrance</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.State#on_exit_message" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="on_exit_message:Option[String]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/State.html#on_exit_message:Option[String]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">on_exit_message</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.State#on_start_message" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="on_start_message:Option[String]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/State.html#on_start_message:Option[String]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">on_start_message</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -598,7 +549,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#wait():Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -620,7 +571,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -642,7 +593,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/State.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../legend/datastructures/Duration.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
