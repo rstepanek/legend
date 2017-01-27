@@ -1,8 +1,13 @@
-[0m[[0minfo[0m] [0mRunning legend.fileio.SimFileReader [0m
+[0m[[0minfo[0m] [0mRunning legend.main.SimDriver [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\target\scala-2.12\classes[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\com.typesafe.scala-logging\scala-logging_2.12\bundles\scala-logging_2.12-3.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.21.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m

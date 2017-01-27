@@ -4,7 +4,7 @@
 		module="legend_2.12"
 		revision="0.01"
 		status="integration"
-		publication="20170115233935"
+		publication="20170127004123"
 	>
 		<description>
 		legend
@@ -34,5 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.1" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.1" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.12" rev="3.5.0" conf="compile->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.7" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

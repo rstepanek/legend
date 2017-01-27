@@ -50,3 +50,35 @@ class Pool(var value: Double, var max:Double=Double.MaxValue, var min:Double=0) 
     return !( (value-n) < min)
   }
 }
+
+/**
+  * A class that represents a modification to an intended Pool. THis modification could represent a cost or production of resources.
+  *
+  * All params subject to change, work in progress.
+  *
+  * @constructor Create a new ResourceMod with a target pool name, an operation to apply to the pool, value.
+  * @param poolname The target pool's name as a string.
+  * @param operation The operation i.e. *,/,+,-
+  * @param value The value by which to modify the pool as a double.
+  * @author Ryan Stepanek
+  * @version 0.1
+  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * information.
+  */
+case class ResourceMod(poolname:String, operation: String, var value: Double) {
+
+  /**
+    * This method applies the modification to a pool.
+    * @return Nothing.
+    * @param pool The that should be modified by the ResourceMod.
+    */
+  def apply(pool: Pool): Unit = {
+    operation match {
+      case "-" => pool - value
+      case "+" => pool + value
+      case "/" => pool / value
+      case "*" => pool * value
+        //TODO: after logging is enabled, add an error report on an invalid operation
+    }
+  }
+}

@@ -3,7 +3,7 @@ package legend.fileio
 import scala.io.Source
 import scala.collection.mutable.Map
 
-
+import com.typesafe.scalalogging._
 /**
   * A class to represent load various text files into the simulator.
   *
@@ -15,18 +15,10 @@ import scala.collection.mutable.Map
   * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
   * information.
   */
-object SimFileReader{
+object SimFileReader extends LazyLogging{
   val fdir = "resources/scenario/states"
   val tfile =  "/scenario/states/test_state.txt"
   val key_value_sep = ':'
-
-  def main(args: Array[String]): Unit = {
-    for(t<-load_resource(tfile)){
-      println(t.toString)
-    }
-
-    print("end of file")
-  }
 
   def load_file(targetFile: String): Map[String,String]={
     val file_args:Map[String,String] = Map[String,String]()
@@ -41,12 +33,13 @@ object SimFileReader{
 
 
   def load_resource(tfile: String):  Map[String,String] ={
+    logger.debug("Loading file: " + tfile)
     val fileStream = getClass.getResourceAsStream(tfile)
     val lines = Source.fromInputStream(fileStream).getLines
     val file_args: Map[String,String] = Map[String,String]()
     lines.foreach(line => {
       val split_point = line.indexOf(key_value_sep)
-      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length))
+      file_args += (line.substring(0,split_point)->line.substring(split_point+1,line.length).trim)
     })
     return file_args
   }
