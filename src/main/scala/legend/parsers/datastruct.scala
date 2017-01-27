@@ -27,7 +27,10 @@ trait datastruct {
   * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
   * information.
   */
-trait structclass {}
+trait structclass {
+  val struct_vars: Map[String,(Class[_],String)]//won't be performant to convert raw input on every get call.
+  //TODO: scrap this
+}
 
 /**
   * A class to hold the allowed keys and expected parameter types for the state object.
@@ -54,6 +57,47 @@ object state_struct extends datastruct{
     ("offmeta",classOf[Map[String,String]])
     //TODO: have meta component handler memoize for differences to avoid computational overhead
   )
+}
+
+case class parameter(mapstring:String, targetClass:Class[_]){
+  def get_param(datamap:Map[String,String]): targetClass.type={
+    //todo: fill out methods for parsing the different class type
+    //instantiate class with a map...problem solved.
+  }
+}
+
+object params{
+  def get_param(input:String, targetClass:Class[_]): targetClass.type ={
+    match targetClass{
+      case classOf[Duration] =>
+      case _ =>
+    }
+  }
+}
+
+//what do I need
+//1)List of all possible params and their types
+//2)Which are mandatory
+//3)Default values
+
+case class s(datamap:Map[String,String]){
+  var p1: Any = if(datamap.contains("p1")) datamap.get("p1").get else 1
+  val p2: Any = if(datamap.contains("p1")) datamap.get("p2").get else 2
+  val r1: Any = if(datamap.contains("r1")) datamap.get("r1").get else throw MissingRequiredStateParameterException()
+  val r2: Any = if(datamap.contains("r1")) datamap.get("r2").get else throw MissingRequiredStateParameterException()
+
+  init_optional()
+  init_required()
+
+  def init_optional(): Unit ={
+
+  }
+
+  def init_required(): Unit ={
+
+  }
+
+
 }
 
 /**
@@ -83,3 +127,5 @@ object SOC{
 }
 
 case class InvalidStateDataException() extends Exception
+case class MissingRequiredStateParameterException() extends Exception
+case class InvalidParameterValueException() extends Exception
