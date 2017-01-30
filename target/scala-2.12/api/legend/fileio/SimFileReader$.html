@@ -136,18 +136,18 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">SimFileReader</span>
+        <span class="name">SimFileReader</span><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class to represent load various text files into the simulator.</p><p>All params subject to change, work in progress.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Add more functionality.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Add more functionality.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -173,7 +173,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="legend.fileio.SimFileReader"><span>SimFileReader</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="legend.fileio.SimFileReader"><span>SimFileReader</span></li><li class="in" name="com.typesafe.scalalogging.LazyLogging"><span>LazyLogging</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -437,9 +437,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       
       
     </li><li name="legend.fileio.SimFileReader#load_resource" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="load_resource(tfile:String):scala.collection.mutable.Map[String,String]"></a><a id="load_resource(String):Map[String,String]"></a>
+      <a id="load_resource(tfile:String):scala.collection.immutable.Map[String,String]"></a><a id="load_resource(String):Map[String,String]"></a>
       <span class="permalink">
-      <a href="../../legend/fileio/SimFileReader$.html#load_resource(tfile:String):scala.collection.mutable.Map[String,String]" title="Permalink">
+      <a href="../../legend/fileio/SimFileReader$.html#load_resource(tfile:String):scala.collection.immutable.Map[String,String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -448,26 +448,29 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">load_resource</span><span class="params">(<span name="tfile">tfile: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">load_resource</span><span class="params">(<span name="tfile">tfile: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       
-    </li><li name="legend.fileio.SimFileReader#main" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="main(args:Array[String]):Unit"></a><a id="main(Array[String]):Unit"></a>
+    </li><li name="com.typesafe.scalalogging.LazyLogging#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:com.typesafe.scalalogging.Logger"></a><a id="logger:Logger"></a>
       <span class="permalink">
-      <a href="../../legend/fileio/SimFileReader$.html#main(args:Array[String]):Unit" title="Permalink">
+      <a href="../../legend/fileio/SimFileReader$.html#logger:com.typesafe.scalalogging.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">main</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">logger</span><span class="result">: <span class="extype" name="com.typesafe.scalalogging.Logger">Logger</span></span>
       </span>
       
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>LazyLogging</dd><dt>Annotations</dt><dd>
+                <span class="name">@volatile</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -640,7 +643,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="com.typesafe.scalalogging.LazyLogging">
+              <h3>Inherited from <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

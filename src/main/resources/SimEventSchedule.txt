@@ -1,0 +1,2 @@
+SimTime EventType   Number  Args
+1   Spawn   1   Ship    State:test

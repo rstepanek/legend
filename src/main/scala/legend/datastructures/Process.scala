@@ -19,7 +19,7 @@ import legend.datastructures
   * @todo Finish this class, implement functionality through graphing library.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 abstract class Process{

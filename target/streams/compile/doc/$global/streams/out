@@ -6,7 +6,8 @@
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_111\lib\resources.jar;C:\Program Files\Java\jre1.8.0_111\lib\rt.jar;C:\Program Files\Java\jre1.8.0_111\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_111\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_111\lib\jce.jar;C:\Program Files\Java\jre1.8.0_111\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_111\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_111\classes;C:\Users\boop\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	dummy_24d35885[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\.ivy2\cache\com.typesafe.scala-logging\scala-logging_2.12\bundles\scala-logging_2.12-3.5.0.jar;C:\Users\boop\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.1.jar;C:\Users\boop\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.21.jar;C:\Users\boop\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar;C:\Users\boop\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\configutils\configs.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Entity.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Locations.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Pool.scala[0m
@@ -16,6 +17,12 @@
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Time.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\events\SimEvents.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\fileio\SimFileReader.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\main\SimDriver.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\parsers\datastruct.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\traits\physicaltraits.scala[0m
+[0m[[33mwarn[0m] [0mthere were 5 feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mC:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Time.scala:86: Could not find any member to link for "TimeConversions.TimeToLong()".[0m
+[0m[[33mwarn[0m] [0m  /**[0m
+[0m[[33mwarn[0m] [0m  ^[0m
+[0m[[33mwarn[0m] [0mtwo warnings found[0m
 [0m[[0minfo[0m] [0mMain Scala API documentation successful.[0m

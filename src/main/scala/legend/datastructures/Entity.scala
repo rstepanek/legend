@@ -9,7 +9,7 @@ package legend.datastructures
   * @param ID The integer ID of the entity.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 case class Entity(val ID:Int)

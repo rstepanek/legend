@@ -11,7 +11,7 @@ package legend.datastructures
   * @param min The minimum possible value of the pool.
   * @author Ryan Stepanek
   * @version 0.2
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 class Pool(var value: Double, var max:Double=Double.MaxValue, var min:Double=0) {
@@ -62,7 +62,7 @@ class Pool(var value: Double, var max:Double=Double.MaxValue, var min:Double=0) 
   * @param value The value by which to modify the pool as a double.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 case class ResourceMod(poolname:String, operation: String, var value: Double) {
@@ -82,3 +82,36 @@ case class ResourceMod(poolname:String, operation: String, var value: Double) {
     }
   }
 }
+
+/**
+  * A helper class to construct a [[ResourceMod]] object from an input string.
+  */
+object ResourceConstructer{
+
+  /**
+    * Given a string, return a valid [[ResourceMod]] object.
+    * @param s
+    */
+  def ResourceFromString(s:String): Unit ={
+    var delim:String = ""
+    if(s.contains("-")){
+      delim = "-"
+    }
+    else if(s.contains("+")){
+      delim = "+"
+    }
+    else if(s.contains("/")){
+      delim = "/"
+    }
+    else if(s.contains("*")){
+      delim = "*"
+    }
+    else{
+      throw InvalidResourceMod(s"Invalid string for ${this.getClass}\n '${s}'\nPlease use a string of the format: <poolname><+,-,/,*><Int or Double> i.e. myPool+7 ")
+    }
+    val Array(poolname,mod) = s.split(delim)
+    new ResourceMod(poolname.trim,delim,mod.filter(x => (x.isDigit | x=='.')).toDouble)
+  }
+}
+
+case class InvalidResourceMod(message: String = "") extends Exception(message)

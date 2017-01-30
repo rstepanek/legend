@@ -127,6 +127,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="InvalidResourceMod.html" title=""></a>
+                        <a href="InvalidResourceMod.html" title="">
+                          InvalidResourceMod
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Point.html" title="A class representing a single point in space."></a>
                         <a href="Point.html" title="A class representing a single point in space.">
                           Point
@@ -145,6 +151,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="object" href="ResourceConstructer$.html" title="A helper class to construct a ResourceMod object from an input string."></a>
+                        <a href="ResourceConstructer$.html" title="A helper class to construct a ResourceMod object from an input string.">
+                          ResourceConstructer
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="ResourceMod.html" title="A class that represents a modification to an intended Pool."></a>
                         <a href="ResourceMod.html" title="A class that represents a modification to an intended Pool.">
                           ResourceMod
@@ -160,6 +172,12 @@
                         <a class="class" href="State.html" title="A class representing a process which is a collection of states."></a>
                         <a href="State.html" title="A class representing a process which is a collection of states.">
                           State
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="TimeConversions$.html" title="A static class to help convert raw string inputs in Duration objects and simtime Long values"></a>
+                        <a href="TimeConversions$.html" title="A static class to help convert raw string inputs in Duration objects and simtime Long values">
+                          TimeConversions
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
@@ -207,7 +225,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class representing a time frequency. Usually paired with a state to schedule recurring events.</p><p>All params subject to change, work in progress.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class representing a time frequency. Usually paired with a state to schedule recurring events. If a state has a time frequency parameter, the entity will be in that state for the <a href="Duration.html" class="extype" name="legend.datastructures.Duration">Duration</a> or the state a numerber of times according to the <a href="#fmin:Int" class="extmbr" name="legend.datastructures.TimeFreq#fmin">fmin</a> and <a href="#fmax:Int" class="extmbr" name="legend.datastructures.TimeFreq#fmax">fmax</a> per each random interval of at least <a href="#windowmin:Long" class="extmbr" name="legend.datastructures.TimeFreq#windowmin">windowmin</a> to <a href="#windowmax:Long" class="extmbr" name="legend.datastructures.TimeFreq#windowmax">windowmax</a>. When the entity is not in this state, it will be rendered with a default &quot;void&quot; state.</p><p>All params subject to change, work in progress.
 </p></div><dl class="paramcmts block"><dt class="param">fmin</dt><dd class="cmt"><p>The minimum number of times to occur within the time window.</p></dd><dt class="param">fmax</dt><dd class="cmt"><p>The max number of times to occur within the time window.</p></dd><dt class="param">windowmin</dt><dd class="cmt"><p>The minimum length of time window in which the event occurs with some frequency.</p></dd><dt class="param">windowmax</dt><dd class="cmt"><p>The maximum length of time window in which the event occurs with some frequency.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Finish this class.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GItHub</a> for more &quot;
 information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -457,6 +475,38 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="legend.datastructures.TimeFreq#getDuration" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getDuration():Long"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/TimeFreq.html#getDuration():Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDuration</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Return a random time in millisecons as Long between the min and max window duration.</p><div class="fullcomment"><div class="comment cmt"><p>Return a random time in millisecons as Long between the min and max window duration.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns a random long between the minimum and maximum possible window duration (inclusive).</p></dd></dl></div>
+    </li><li name="legend.datastructures.TimeFreq#getFrequency" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getFrequency():Int"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/TimeFreq.html#getFrequency():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFrequency</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Return a random number of occurrences within a timewindow between the min and max frequency as an Int.</p><div class="fullcomment"><div class="comment cmt"><p>Return a random number of occurrences within a timewindow between the min and max frequency as an Int.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns a random Int between the minimum and maximum possible frequency (inclusive).</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">

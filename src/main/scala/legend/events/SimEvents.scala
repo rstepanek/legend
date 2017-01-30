@@ -13,7 +13,7 @@ import legend.datastructures.Entity
   * @todo Finish this class.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 case class SimEvent(val source: Entity, val time:Long, val args: Option[Object]*){}

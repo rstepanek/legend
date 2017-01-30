@@ -1,12 +1,13 @@
 Name: State:test
-RequireTags: testing,one
-BannedTags: production
-Duration: 1-2 Days
-Yields: (successful test, add, 1)
+Require_Tags: testing,one
+Banned_Tags: production
+Duration: 1Days-2 Days
+Yields: successful test + 1; split test + 10
 Cost: None
-PoolRestrictions: None
-TimeFreq: None
-Message_on_Start: Test has began.
-Message_on_Exit: Test has ended.
-Message_On_Entrance: Initialized.
+PoolRestrictions: None//Not currently implemented
+TimeFreq: 1-2,3d-4d
+On_Start_Message: Test has began.
+On_Entrance_Message: Activated.
+On_Exit_Message: Test has ended.
+On_Hibernate_Message: Deactivated.
 Concurrent: True

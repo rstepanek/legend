@@ -8,7 +8,7 @@ package legend.datastructures
   * @todo Unify traits into a single class or create a trait interface.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 trait Restriction{
@@ -27,7 +27,7 @@ trait Restriction{
   * @todo Make pool names have a meta type to allow comparison against pool types rather than specific names.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
 case class poolRestriction(val poolNames: List[String], val argument: String, val limit: Int) extends Restriction{
@@ -55,12 +55,12 @@ case class poolRestriction(val poolNames: List[String], val argument: String, va
   *
   * @constructor A poolRestriction requires a poolName to compare against, a type of comparator in the form of a string, and a value to compare against.
   * @param restrictionNames A list of applicable tag group names against which the restriction can be checked.
-  * @param argument The type of camparison, currently "has" or "lacks".
+  * @param argument The type of comparison, currently "has" or "lacks".
   * @param tagRestr The tag to checkout for the presence or absence of.
   * @todo Make pool names have a meta type to allow comparison against pool types rather than specific names.
   * @author Ryan Stepanek
   * @version 0.1
-  * @see See [[https://github.com/rstepanek/legend Legend on GItHub]] for more "
+  * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
   case class tagRestriction(val restrictionNames: List[String], val argument: String, val tagRestr: String) extends Restriction {
