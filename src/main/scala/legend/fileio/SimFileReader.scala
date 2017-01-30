@@ -31,7 +31,11 @@ object SimFileReader extends LazyLogging{
     return file_args
   }
 
-
+  /**
+    * Parses a file by path from the resources directoy or absolute path. Splits each line on a [[key_value_sep]] into the rows of a map(k.toLowerCase.trim->v.trim). Returns a map of all lowercase keys.
+    * @param tfile The location of the key:value file to parse.
+    * @return A new collection.immutable.Map[String,String] object containing the key: value pairs, with both key and value trimmed (key is also all lowercase).
+    */
   def load_resource(tfile: String):  collection.immutable.Map[String,String] ={
     logger.debug("Loading file: " + tfile)
     val fileStream = getClass.getResourceAsStream(tfile)

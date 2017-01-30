@@ -30,6 +30,7 @@ object SimDriver extends LazyLogging{
   TODO: Implement Main Event Loop
   TODO: Implement spawning actor
   TODO: Implement output actor
+  TODO: Have a log that records sim events, a log that records messages, a warning log, and an error log
    */
 
 }
