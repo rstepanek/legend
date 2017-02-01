@@ -161,6 +161,24 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="legend">legend</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="BadlyFormattedFile.html" title=""></a>
+                        <a href="BadlyFormattedFile.html" title="">
+                          BadlyFormattedFile
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="InvalidEvent.html" title=""></a>
+                        <a href="InvalidEvent.html" title="">
+                          InvalidEvent
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="SimEventFileReader$.html" title="A class to load the SimEventFile into the simulator."></a>
+                        <a href="SimEventFileReader$.html" title="A class to load the SimEventFile into the simulator.">
+                          SimEventFileReader
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="object" href="SimFileReader$.html" title="A class to represent load various text files into the simulator."></a>
                         <a href="SimFileReader$.html" title="A class to represent load various text files into the simulator.">
                           SimFileReader
@@ -280,14 +298,73 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="legend.fileio.BadlyFormattedFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BadlyFormattedFileextendsExceptionwithProductwithSerializable"></a><a id="BadlyFormattedFile:BadlyFormattedFile"></a>
+      <span class="permalink">
+      <a href="../../legend/fileio/index.html#BadlyFormattedFileextendsExceptionwithProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="BadlyFormattedFile.html">
+              <span class="name">BadlyFormattedFile</span>
+            </a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">message</dt><dd class="cmt"><p>The error message.</p></dd></dl><dl class="attributes block"> <dt>To do</dt><dd><span class="cmt"><p>Move this class to the fileio package level.</p></span></dd></dl></div>
+    </li><li name="legend.fileio.InvalidEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InvalidEventextendsExceptionwithProductwithSerializable"></a><a id="InvalidEvent:InvalidEvent"></a>
+      <span class="permalink">
+      <a href="../../legend/fileio/index.html#InvalidEventextendsExceptionwithProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="InvalidEvent.html">
+              <span class="name">InvalidEvent</span>
+            </a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
 
         
 
         <div class="values members">
               <h3>Value Members</h3>
               <ol>
-                <li name="legend.fileio.SimFileReader" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+                <li name="legend.fileio.SimEventFileReader" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SimEventFileReader"></a><a id="SimEventFileReader:SimEventFileReader"></a>
+      <span class="permalink">
+      <a href="../../legend/fileio/index.html#SimEventFileReader" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A class to load the SimEventFile into the simulator." href="SimEventFileReader$.html">
+              <span class="name">SimEventFileReader</span>
+            </a><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">A class to load the SimEventFile into the simulator.</p><div class="fullcomment"><div class="comment cmt"><p>A class to load the SimEventFile into the simulator. A valid SimEvent file has the form &quot;Time\tEventType\tNumber\tArg2\tArg2\tArg3\tetc...&quot; Where Time is an valid time in miliseconds (default), seconds, minutes, hours, or days, or any valid date range. EventType is the type of event to generate i.e. Spawn, Destroy, etc... Number is the number of time the event occurrs, and the Args are the tab separated arguments of the event constructor.</p><p>All params subject to change, work in progress.
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Add more functionality.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+information.</p></span></dd></dl></div>
+    </li><li name="legend.fileio.SimFileReader" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SimFileReader"></a><a id="SimFileReader:SimFileReader"></a>
       <span class="permalink">
       <a href="../../legend/fileio/index.html#SimFileReader" title="Permalink">

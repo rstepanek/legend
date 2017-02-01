@@ -89,10 +89,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
-    </li><li name="legend.main" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="main"></a><a id="main:main"></a>
+    </li><li name="legend.fileio" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fileio"></a><a id="fileio:fileio"></a>
       <span class="permalink">
-      <a href="../legend/index.html#main" title="Permalink">
+      <a href="../legend/index.html#fileio" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -102,16 +102,34 @@
       </span>
       <span class="symbol">
         <a title="" href="index.html">
-              <span class="name">main</span>
+              <span class="name">fileio</span>
             </a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="legend">legend</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="" title="The main driving class of the simulation, currently used for testing."></a>
-                        <a href="" title="The main driving class of the simulation, currently used for testing.">
-                          SimDriver
+                        <a class="class" href="BadlyFormattedFile.html" title=""></a>
+                        <a href="BadlyFormattedFile.html" title="">
+                          BadlyFormattedFile
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="InvalidEvent.html" title=""></a>
+                        <a href="InvalidEvent.html" title="">
+                          InvalidEvent
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="" title="A class to load the SimEventFile into the simulator."></a>
+                        <a href="" title="A class to load the SimEventFile into the simulator.">
+                          SimEventFileReader
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="SimFileReader$.html" title="A class to represent load various text files into the simulator."></a>
+                        <a href="SimFileReader$.html" title="A class to represent load various text files into the simulator.">
+                          SimFileReader
                         </a>
                       </li>
               </ul>
@@ -121,9 +139,9 @@
             <body class="object value">
       <div id="definition">
         <div class="big-circle object">o</div>
-        <p id="owner"><a href="../index.html" class="extype" name="legend">legend</a>.<a href="index.html" class="extype" name="legend.main">main</a></p>
-        <h1>SimDriver<span class="permalink">
-      <a href="../../legend/main/SimDriver$.html" title="Permalink">
+        <p id="owner"><a href="../index.html" class="extype" name="legend">legend</a>.<a href="index.html" class="extype" name="legend.fileio">fileio</a></p>
+        <h1>SimEventFileReader<span class="permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -136,16 +154,18 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">SimDriver</span><span class="result"> extends <span class="extype" name="scala.App">App</span> with <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+        <span class="name">SimEventFileReader</span><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The main driving class of the simulation, currently used for testing. It will hold the main event loop of the scenario.</p><p>All params subject to change, work in progress.</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.</p></span></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class to load the SimEventFile into the simulator. A valid SimEvent file has the form &quot;Time\tEventType\tNumber\tArg2\tArg2\tArg3\tetc...&quot; Where Time is an valid time in miliseconds (default), seconds, minutes, hours, or days, or any valid date range. EventType is the type of event to generate i.e. Spawn, Destroy, etc... Number is the number of time the event occurrs, and the Args are the tab separated arguments of the event constructor.</p><p>All params subject to change, work in progress.
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Add more functionality.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span>, <span class="extype" name="scala.App">App</span>, <span class="extype" name="scala.DelayedInit">DelayedInit</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -171,7 +191,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="legend.main.SimDriver"><span>SimDriver</span></li><li class="in" name="com.typesafe.scalalogging.LazyLogging"><span>LazyLogging</span></li><li class="in" name="scala.App"><span>App</span></li><li class="in" name="scala.DelayedInit"><span>DelayedInit</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="legend.fileio.SimEventFileReader"><span>SimEventFileReader</span></li><li class="in" name="com.typesafe.scalalogging.LazyLogging"><span>LazyLogging</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -201,7 +221,7 @@
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -217,7 +237,7 @@
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html###():Int" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -233,7 +253,7 @@
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -246,10 +266,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.App#args" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="args:Array[String]"></a>
+    </li><li name="legend.fileio.SimEventFileReader#LoadSimEvents" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LoadSimEvents(file_loc:String):List[legend.events.SimEvent]"></a><a id="LoadSimEvents(String):List[SimEvent]"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#args:Array[String]" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#LoadSimEvents(file_loc:String):List[legend.events.SimEvent]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -258,23 +278,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">args</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">LoadSimEvents</span><span class="params">(<span name="file_loc">file_loc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../events/SimEvent.html" class="extype" name="legend.events.SimEvent">SimEvent</a>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>App</dd><dt>Annotations</dt><dd>
-                <span class="name">@deprecatedOverriding</span><span class="args">(<span>
-      
-      <span class="symbol">&quot;args should not be overridden&quot;</span>
-    </span>, <span>
-      
-      <span class="symbol">&quot;2.11.0&quot;</span>
-    </span>)</span>
-              
-        </dd></dl></div>
+      <p class="shortcomment cmt">Load a SimEvent file and return a list of scheduled <span class="extype" name="SimEvent">SimEvent</span>s.</p><div class="fullcomment"><div class="comment cmt"><p>Load a SimEvent file and return a list of scheduled <span class="extype" name="SimEvent">SimEvent</span>s.</p></div><dl class="paramcmts block"><dt class="param">file_loc</dt><dd class="cmt"><p>The location of the file to load.</p></dd><dt>returns</dt><dd class="cmt"><p>A list of <span class="extype" name="SimEvent">SimEvent</span>s generated from the file.</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -287,10 +298,26 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="legend.fileio.SimEventFileReader#check_sim_event_line" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="check_sim_event_line(s:String):Unit"></a><a id="check_sim_event_line(String):Unit"></a>
+      <span class="permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#check_sim_event_line(s:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">check_sim_event_line</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Checks if a given line of a SimEvent file is valid and thows an error if it's not.</p><div class="fullcomment"><div class="comment cmt"><p>Checks if a given line of a SimEvent file is valid and thows an error if it's not.</p></div><dl class="paramcmts block"><dt class="param">s</dt><dd class="cmt"><p>The string to verify (should be a single line from the SimEvent file.</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#clone():Object" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -309,26 +336,26 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="legend.main.SimDriver#current_time" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="current_time():Long"></a>
+    </li><li name="legend.fileio.SimEventFileReader#delimiter" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="delimiter:Char"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#current_time():Long" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#delimiter:Char" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">current_time</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+        <span class="name">delimiter</span><span class="result">: <span class="extype" name="scala.Char">Char</span></span>
       </span>
       
-      <p class="shortcomment cmt">Get the current sim time.</p><div class="fullcomment"><div class="comment cmt"><p>Get the current sim time.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the current sim time.</p></dd></dl></div>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -344,7 +371,7 @@
     </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#equals(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#equals(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -357,51 +384,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.App#executionStart" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="executionStart:Long"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#executionStart:Long" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">executionStart</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>App</dd><dt>Annotations</dt><dd>
-                <span class="name">@deprecatedOverriding</span><span class="args">(<span>
-      
-      <span class="defval" name="&quot;executionStart should not be overridden&quot;">...</span>
-    </span>, <span>
-      
-      <span class="symbol">&quot;2.11.0&quot;</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="legend.main.SimDriver#file_data" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="file_data:List[legend.events.SimEvent]"></a><a id="file_data:List[SimEvent]"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#file_data:List[legend.events.SimEvent]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">file_data</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../events/SimEvent.html" class="extype" name="legend.events.SimEvent">SimEvent</a>]</span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#finalize():Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -423,7 +409,7 @@
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#getClass():Class[_]" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -439,7 +425,7 @@
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#hashCode():Int" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#hashCode():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -452,42 +438,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="legend.main.SimDriver#init_clock_time" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="init_clock_time():Long"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#init_clock_time():Long" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">init_clock_time</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Initialize the sim clock.</p><div class="fullcomment"><div class="comment cmt"><p>Initialize the sim clock.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>1 as a long</p></dd></dl></div>
-    </li><li name="legend.main.SimDriver#init_system_entity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="init_system_entity():legend.datastructures.Entity"></a><a id="init_system_entity():Entity"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#init_system_entity():legend.datastructures.Entity" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">init_system_entity</span><span class="params">()</span><span class="result">: <a href="../datastructures/Entity.html" class="extype" name="legend.datastructures.Entity">Entity</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Initialize the reserved entity from system level events i.e.</p><div class="fullcomment"><div class="comment cmt"><p>Initialize the reserved entity from system level events i.e. spawning, etc..</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the system entity.</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -503,7 +457,7 @@
     </li><li name="com.typesafe.scalalogging.LazyLogging#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="logger:com.typesafe.scalalogging.Logger"></a><a id="logger:Logger"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#logger:com.typesafe.scalalogging.Logger" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#logger:com.typesafe.scalalogging.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -519,35 +473,10 @@
                 <span class="name">@volatile</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.App#main" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="main(args:Array[String]):Unit"></a><a id="main(Array[String]):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#main(args:Array[String]):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">main</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>App</dd><dt>Annotations</dt><dd>
-                <span class="name">@deprecatedOverriding</span><span class="args">(<span>
-      
-      <span class="symbol">&quot;main should not be overridden&quot;</span>
-    </span>, <span>
-      
-      <span class="symbol">&quot;2.11.0&quot;</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -563,7 +492,7 @@
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#notify():Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -579,7 +508,7 @@
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#notifyAll():Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -592,42 +521,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="legend.main.SimDriver#print_banner" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="print_banner():Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#print_banner():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">print_banner</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Print the Legend banner.</p>
-    </li><li name="legend.main.SimDriver#print_configs" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="print_configs():Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#print_configs():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">print_configs</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Print the loaded config settings.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -640,26 +537,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="legend.main.SimDriver#system_entity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="system_entity:legend.datastructures.Entity"></a><a id="system_entity:Entity"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#system_entity:legend.datastructures.Entity" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">system_entity</span><span class="result">: <a href="../datastructures/Entity.html" class="extype" name="legend.datastructures.Entity">Entity</a></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#toString():String" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#toString():String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -675,7 +556,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#wait():Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -697,7 +578,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -719,7 +600,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../legend/fileio/SimEventFileReader$.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -744,38 +625,12 @@
 
         
 
-        <div class="values members">
-              <h3>Deprecated Value Members</h3>
-              <ol><li name="scala.App#delayedInit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="delayedInit(body:=&gt;Unit):Unit"></a><a id="delayedInit(⇒Unit):Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/main/SimDriver$.html#delayedInit(body:=&gt;Unit):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.11.0) the delayedInit mechanism will disappear">delayedInit</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>App → DelayedInit</dd><dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.11.0)</i> the delayedInit mechanism will disappear</p></dd></dl></div>
-    </li></ol>
-            </div>
+        
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="com.typesafe.scalalogging.LazyLogging">
               <h3>Inherited from <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></h3>
-            </div><div class="parent" name="scala.App">
-              <h3>Inherited from <span class="extype" name="scala.App">App</span></h3>
-            </div><div class="parent" name="scala.DelayedInit">
-              <h3>Inherited from <span class="extype" name="scala.DelayedInit">DelayedInit</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

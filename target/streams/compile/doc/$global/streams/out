@@ -16,13 +16,17 @@
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\State.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Time.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\events\SimEvents.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\fileio\SimEventFileReader.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\fileio\SimFileReader.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\main\SimDriver.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\parsers\datastruct.scala[0m
 [0m[[0mdebug[0m] [0m	C:\Users\boop\Desktop\legend\src\main\scala\legend\traits\physicaltraits.scala[0m
 [0m[[33mwarn[0m] [0mthere were 5 feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mC:\Users\boop\Desktop\legend\src\main\scala\legend\fileio\SimEventFileReader.scala:24: Could not find any member to link for "SimEvent".[0m
+[0m[[33mwarn[0m] [0m  /**[0m
+[0m[[33mwarn[0m] [0m  ^[0m
 [0m[[33mwarn[0m] [0mC:\Users\boop\Desktop\legend\src\main\scala\legend\datastructures\Time.scala:86: Could not find any member to link for "TimeConversions.TimeToLong()".[0m
 [0m[[33mwarn[0m] [0m  /**[0m
 [0m[[33mwarn[0m] [0m  ^[0m
-[0m[[33mwarn[0m] [0mtwo warnings found[0m
+[0m[[33mwarn[0m] [0mthree warnings found[0m
 [0m[[0minfo[0m] [0mMain Scala API documentation successful.[0m

@@ -10,7 +10,7 @@ import com.typesafe.scalalogging._
   *
   * Did you know: This trait is used for dynamic construction of sim objects at runtime.
   *
-  * @todo This implementation is cumbersome and does not easily allow for meaningul error messages. Re-implement this functionality using reflection and custom error messages.
+  * @todo This implementation is cumbersome and does not easily allow for meaningful error messages. Re-implement this functionality using reflection and custom error messages.
   * @author Ryan Stepanek
   * @version 0.1
   * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.

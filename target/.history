@@ -1,0 +1,52 @@
+repl
+help
+scala
+repl
+eval
+help eval
+eval("1 2 3 4")
+eval "1 2 3 4"
+eval val a="1 2 3 4"
+eval val a:String="1 2 3 4"
+eval (val a:String="1 2 3 4")
+val a = "1 2 3 4"
+help parser
+help parse
+help
+help settings
+help settings -v
+help -v settings 
+exit
+~compile
+run
+compile
+run
+~compile
+run
+~compile
+run
+compile
+run
+compile
+run
+~compile
+run
+~compile
+run
+~compile
+run
+~compile
+run
+~compile
+run
+~compile
+run
+~compile
+run
+compile
+run
+compile
+run
+compile
+run
+exit

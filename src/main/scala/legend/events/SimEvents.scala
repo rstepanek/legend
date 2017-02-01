@@ -17,3 +17,6 @@ import legend.datastructures.Entity
   * information.
   */
 case class SimEvent(val source: Entity, val time:Long, val args: Option[Object]*){}
+
+trait SpawnEvent{this:SimEvent=>}
+trait DestroyEvent{this:SimEvent=>}
