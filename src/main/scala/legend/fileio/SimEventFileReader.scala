@@ -1,11 +1,11 @@
 package legend.fileio
 
-import legend.events.{SimEvent, SpawnEvent}
+import legend.events.SimEvent
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 import com.typesafe.scalalogging._
-import legend.main.SimDriver
+import legend.main.SimDriver._
 
 /**
   * A class to load the SimEventFile into the simulator. A valid SimEvent file has the form "Time\tEventType\tNumber\tArg2\tArg2\tArg3\tetc..." Where Time is an valid time in miliseconds (default), seconds, minutes, hours, or days, or any valid date range. EventType is the type of event to generate i.e. Spawn, Destroy, etc... Number is the number of time the event occurrs, and the Args are the tab separated arguments of the event constructor.
@@ -41,7 +41,7 @@ val delimiter = '\t'
 
         //Add the correct SimEvent to the list
         event_type.toLowerCase.trim match {
-          case "spawn" => file_args += new SimEvent(SimDriver.system_entity,time.toLong,Some(args)) with SpawnEvent
+          case "spawn" => //file_args += new SimEvent(SimDriver.system_entity,time.toLong,Some(args)) with SpawnEvent
           case "event_type" | "eventtype" => //do nothing, it's the header
           case _ => throw InvalidEvent(s"${event_type} is not a valid event type. Please see supported event type documentation.")
         }

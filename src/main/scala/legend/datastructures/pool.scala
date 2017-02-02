@@ -92,7 +92,7 @@ object ResourceConstructer{
     * Given a string, return a valid [[ResourceMod]] object.
     * @param s
     */
-  def ResourceFromString(s:String): Unit ={
+  def ResourceFromString(s:String): ResourceMod ={
     var delim:String = ""
     if(s.contains("-")){
       delim = "-"

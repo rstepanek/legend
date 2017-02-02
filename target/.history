@@ -50,3 +50,8 @@ run
 compile
 run
 exit
+~compile
+doc
+~doc
+~compile
+exit

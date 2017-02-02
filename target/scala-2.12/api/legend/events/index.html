@@ -142,22 +142,10 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="legend">legend</a></dd></dl></div>
     </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="trait" href="DestroyEvent.html" title=""></a>
-                        <a href="DestroyEvent.html" title="">
-                          DestroyEvent
-                        </a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="class" href="SimEvent.html" title="A base class for the sim events."></a>
-                        <a href="SimEvent.html" title="A base class for the sim events.">
+                        <a class="object" href="SimEvent$.html" title=""></a>
+                        <a class="trait" href="SimEvent.html" title="A base for the sim events."></a>
+                        <a href="SimEvent.html" title="A base for the sim events.">
                           SimEvent
-                        </a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="trait" href="SpawnEvent.html" title=""></a>
-                        <a href="SpawnEvent.html" title="">
-                          SpawnEvent
                         </a>
                       </li><li name="legend.fileio" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fileio"></a><a id="fileio:fileio"></a>
@@ -262,7 +250,31 @@
           <div id="comment" class="fullcommenttop"></div>
         
 
-      
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
 
       <div id="template">
         <div id="allMembers">
@@ -270,10 +282,10 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="legend.events.DestroyEvent" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DestroyEventextendsAnyRef"></a><a id="DestroyEvent:DestroyEvent"></a>
+              <ol><li name="legend.events.SimEvent" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SimEventextendsAnyRef"></a><a id="SimEvent:SimEvent"></a>
       <span class="permalink">
-      <a href="../../legend/events/index.html#DestroyEventextendsAnyRef" title="Permalink">
+      <a href="../../legend/events/index.html#SimEventextendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -282,56 +294,43 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="DestroyEvent.html">
-              <span class="name">DestroyEvent</span>
-            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      
-      
-    </li><li name="legend.events.SimEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="SimEventextendsProductwithSerializable"></a><a id="SimEvent:SimEvent"></a>
-      <span class="permalink">
-      <a href="../../legend/events/index.html#SimEventextendsProductwithSerializable" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a title="A base class for the sim events." href="SimEvent.html">
+        <a title="A base for the sim events." href="SimEvent.html">
               <span class="name">SimEvent</span>
-            </a><span class="params">(<span name="source">source: <a href="../datastructures/Entity.html" class="extype" name="legend.datastructures.Entity">Entity</a></span>, <span name="time">time: <span class="extype" name="scala.Long">Long</span></span>, <span name="args">args: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]*</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">A base class for the sim events.</p><div class="fullcomment"><div class="comment cmt"><p>A base class for the sim events.</p><p>All params subject to change, work in progress.
-</p></div><dl class="paramcmts block"><dt class="param">source</dt><dd class="cmt"><p>The source entity that generated the event.</p></dd><dt class="param">time</dt><dd class="cmt"><p>The time at which the event occurs.</p></dd><dt class="param">args</dt><dd class="cmt"><p>The optional arguments for the event.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Finish this class.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
-information.</p></span></dd></dl></div>
-    </li><li name="legend.events.SpawnEvent" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SpawnEventextendsAnyRef"></a><a id="SpawnEvent:SpawnEvent"></a>
-      <span class="permalink">
-      <a href="../../legend/events/index.html#SpawnEventextendsAnyRef" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="SpawnEvent.html">
-              <span class="name">SpawnEvent</span>
             </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">A base for the sim events.</p><div class="fullcomment"><div class="comment cmt"><p>A base for the sim events. Every</p><p>All params subject to change, work in progress.
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+information.</p></span></dd></dl></div>
     </li></ol>
             </div>
 
         
 
-        
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="legend.events.SimEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SimEvent"></a><a id="SimEvent:SimEvent"></a>
+      <span class="permalink">
+      <a href="../../legend/events/index.html#SimEvent" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SimEvent$.html">
+              <span class="name">SimEvent</span>
+            </a>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
 
         
 

@@ -54,7 +54,7 @@ object params extends LazyLogging {
   }
 
   def resourcemodlist(name:String,data:Map[String,String]) ={
-    try if(data.get(name).get.toLowerCase.trim!="none") Some(ResourceConstructer.ResourceFromString(data.get(name).get))
+    try if(data.get(name).get.toLowerCase.trim!="none") Some(data.get(name).get.split(",").map(x => ResourceConstructer.ResourceFromString(x)).toList)
     else None
     catch{case _: Throwable => None}
   }

@@ -2,113 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02d1e6cf-9ef3-4d73-b65a-62ee65e34b47" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/configutils/configs$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/configutils/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Duration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Entity.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/InvalidResourceMod.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Point.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Pool.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Process.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceConstructer$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceMod.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Restriction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/State.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeConversions$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeFreq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/poolRestriction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/tagRestriction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/SimEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/fileio/SimFileReader$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/fileio/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/main/SimDriver$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/main/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/InvalidParameterValueException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/InvalidStateDataException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/MissingRequiredParameterException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/params$.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/traits/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/traits/physical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/MaterialIcons-Regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/MaterialIcons-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/MaterialIcons-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/abstract_type.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/class.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/class_comp.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/class_diagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/diagrams.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/diagrams.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/jquery.mousewheel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/jquery.panzoom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-100.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-100.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-100.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/lato-v11-latin-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/object.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/object_comp.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/object_comp_trait.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/object_diagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/open-sans-v13-latin-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/open-sans-v13-latin-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/open-sans-v13-latin-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/ownderbg2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/ownerbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/ownerbg2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/package.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/ref-index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/scheduler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-700.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-700.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-700.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/source-code-pro-v6-latin-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/template.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/tools.tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/trait.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/trait_comp.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/trait_diagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/lib/type_diagram.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/SimFileReader$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/SimFileReader$.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/DestroyEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/SpawnEvent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/DestroyEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/SpawnEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/SimEventFileReader$$anon$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/ResourceConstructer$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/ResourceConstructer$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/ResourceConstructer.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/ResourceConstructer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/State$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/State$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/State.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/datastructures/State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/SimEvent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/SimEvent$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/SimEvent.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/events/SimEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/BadlyFormattedFile$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/BadlyFormattedFile$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/BadlyFormattedFile.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/BadlyFormattedFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/InvalidEvent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/InvalidEvent$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/InvalidEvent.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/InvalidEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/SimEventFileReader$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/fileio/SimEventFileReader$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/main/SimDriver$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/main/SimDriver$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/main/SimDriver.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/main/SimDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidParameterValueException$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidParameterValueException$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidParameterValueException.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidParameterValueException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidStateDataException$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidStateDataException$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidStateDataException.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/InvalidStateDataException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/MissingRequiredParameterException$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/MissingRequiredParameterException$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/MissingRequiredParameterException.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/MissingRequiredParameterException.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/params$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/params$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/params.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/legend/parsers/params.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/scala/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/scala/inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/scala/output" afterPath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/scala/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SimEventSchedule.txt" afterPath="$PROJECT_DIR$/src/main/resources/SimEventSchedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/datastructures/pool.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/datastructures/pool.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/main/SimDriver.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/main/SimDriver.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala" afterPath="$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/index.js" afterPath="$PROJECT_DIR$/target/scala-2.12/api/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Area.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Area.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Duration.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Duration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Entity.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Entity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/InvalidResourceMod.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/InvalidResourceMod.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Point.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Point.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Pool.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Pool.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Process.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Process.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceConstructer$.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceConstructer$.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceMod.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/ResourceMod.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Restriction.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/Restriction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/State.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/State.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeConversions$.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeConversions$.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeFreq.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/TimeFreq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/index.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/poolRestriction.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/poolRestriction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/tagRestriction.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/datastructures/tagRestriction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/SimEvent.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/SimEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/index.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/events/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/index.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/params$.html" afterPath="$PROJECT_DIR$/target/scala-2.12/api/legend/parsers/params$.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/doc/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/run/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/run/$global/streams/out" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -132,26 +79,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimFileReader.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/legend/fileio/SimFileReader.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-              <folding>
-                <element signature="e#23#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SimDriver.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/legend/main/SimDriver.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-              <folding>
-                <element signature="e#21#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,13 +109,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimEventFileReader.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimEventFileReader.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="408">
+              <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
               <folding>
-                <element signature="e#23#66#0" expanded="true" />
+                <element signature="e#23#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,18 +124,28 @@
       <file leaf-file-name="SimEvents.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datastruct.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala">
+      <file leaf-file-name="Time.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
+            <state relative-caret-position="291">
+              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="State.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -224,10 +167,12 @@
       <find>GItHub]] for more &quot;</find>
       <find>case _</find>
       <find>ResourceModList</find>
+      <find>,</find>
     </findStrings>
     <replaceStrings>
       <replace>GitHub]] for more.</replace>
       <replace>case _: Throwable</replace>
+      <replace>],</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -263,18 +208,19 @@
         <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Locations.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Process.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/traits/physicaltraits.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Restriction.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/configutils/configs.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/scenario/states/test_state.txt" />
-        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Pool.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/fileio/SimFileReader.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/SimEventSchedule.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/main/SimDriver.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Pool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/constructors/StateConstructor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala" />
       </list>
     </option>
   </component>
@@ -298,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -473,6 +418,10 @@
               <option name="myItemId" value="datastructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -502,10 +451,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="datastructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pool.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -577,6 +522,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -913,7 +859,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16030534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16717558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -939,7 +885,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -952,7 +898,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1585736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16717558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -970,13 +916,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Pool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -988,9 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="e#23#45#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,9 +963,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#45#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,9 +985,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#45#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,19 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="70" lean-forward="false" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/scenario/states/test_state.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,15 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="116" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,25 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Pool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="88" column="7" lean-forward="false" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/fileio/SimFileReader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-          <folding>
-            <element signature="e#23#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,39 +1155,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/fileio/SimFileReader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Pool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/constructors/StateConstructor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" column="150" lean-forward="false" selection-start-line="56" selection-start-column="150" selection-end-line="56" selection-end-column="150" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/legend/main/SimDriver.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding>
-            <element signature="e#21#54#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/State.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/legend/events/SimEvents.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/datastructures/Time.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/legend/fileio/SimEventFileReader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+        <state relative-caret-position="408">
+          <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
           <folding>
-            <element signature="e#23#66#0" expanded="true" />
+            <element signature="e#23#52#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/legend/parsers/datastruct.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>

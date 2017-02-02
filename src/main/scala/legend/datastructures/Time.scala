@@ -84,7 +84,7 @@ object TimeConversions{
   }
 
   /**
-    * Splits any string into its numerical and character parts and passes them to [[TimeConversions.TimeToLong()]]
+    * Splits any string into its numerical and character parts and passes them to [[TimeToLong]]
     * @param s The raw timestring i.e. "20s", "4.5hours","250day", etc...
     * @return The duration in millis as a Long
     */
