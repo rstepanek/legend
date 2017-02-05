@@ -1,0 +1,14 @@
+Name: State:test2
+Require_Tags: testing,one
+Banned_Tags: production
+Duration: 1Days-2 Days
+Yields: successful test + 1; split test + 10
+Cost: None
+PoolRestrictions: None//Not currently implemented
+TimeFreq: 1-2,3d-4d
+On_Start_Message: Test has began.
+On_Entrance_Message: Activated.
+On_Exit_Message: Test has ended.
+On_Hibernate_Message: Deactivated.
+Concurrent: True
+//TODO: Add commands to the state i.e. GOTO...implement commands as a subset of SimEvents

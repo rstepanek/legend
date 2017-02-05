@@ -1,6 +1,7 @@
 package legend.datastructures
 
 import legend.parsers.{MissingRequiredParameterException, params}
+import legend.traits.tagged_object
 
 /**
   * A class representing a process which is a collection of states. Each process must have at least on entry state and may have at least one exit state.
@@ -35,7 +36,7 @@ case class State(name:String, duration:Duration,
                  on_hibernate_message:Option[List[String]], on_exit_message:Option[List[String]],
                  onmeta_tags:Option[Map[String,String]], offmeta_tags:Option[Map[String,String]],
                  cost:Option[List[ResourceMod]], yields:Option[List[ResourceMod]],
-                 cost_on_activation:Option[Boolean], yield_on_hibernate:Option[Boolean]){
+                 cost_on_activation:Option[Boolean], yield_on_hibernate:Option[Boolean], tags:Option[List[String]]) extends tagged_object{
  /*
   ("poolrestrictions", classOf[List[poolRestriction]]),//TODO: implement this
 */
@@ -77,6 +78,7 @@ object State {
     val yields = params.resourcemodlist("yields", data)
     val cost_on_activation = params.boolean("cost_on_activation", data)
     val yield_on_hibernate = params.boolean("yield_on_hibernate", data)
+    val tags = params.stringlist("tags",data)
 
     new State(name=name, duration=duration, timefreq=timefreq,
       concurrent=concurrent,require_tags=require_tags, banned_tags=banned_tags,
@@ -84,6 +86,7 @@ object State {
       on_hibernate_message=on_hibernate_message,on_activation_message=on_activation_message,
       onmeta_tags=onmeta_tags,offmeta_tags=offmeta_tags,
       cost=cost,yields=yields,
-      cost_on_activation=cost_on_activation,yield_on_hibernate=yield_on_hibernate)
+      cost_on_activation=cost_on_activation,yield_on_hibernate=yield_on_hibernate,
+      tags=tags)
   }
 }

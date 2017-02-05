@@ -1,0 +1,4 @@
+name: truck
+mass: 8000
+accel_profile: slow
+//The profile matters when the physics engine and georendering are fully implemented, allowing for a rich implementation of different accel profiles based on mass and engine capability.

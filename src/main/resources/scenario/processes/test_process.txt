@@ -1,0 +1,13 @@
+Name: Process:test
+1.00 => State:test
+State:test -1.00-> State:test2
+//There are 3 types of state transitions
+//1)Entrance transitions denoted by "prob=>state"
+//2)Normal trans i.e. state1-1.00-state2
+//3)Message trans i.e. state1-custommessage-state2
+//This gives rise to 3 kinds of states
+//1)Entrance states - possible initial states for entities when the enter the process tree
+//2)Intermediate states - states that connect one state to another.
+//3)Terminal states - leaf nodes that do not connect to other states.
+//3.5)It should be possible to specify that a state should restart the process on exit i.e. state2=>_
+//Note that the classification of a state it purely determined by its position in the process graph and is not a property of the state itself.

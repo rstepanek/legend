@@ -16,7 +16,7 @@ import com.typesafe.scalalogging._
   * @see See [[https://github.com/rstepanek/legend Legend on GitHub]] for more.
   * information.
   */
-object params extends LazyLogging {
+object params {
   def duration(name:String="duration",data:Map[String,String]) ={
     try if(data.get(name).get.toLowerCase.trim!="none") Some(TimeConversions.DurationFromString(data.get(name).get))
     else None

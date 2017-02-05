@@ -27,6 +27,13 @@ val state_list: ListBuffer[datastructures.State]
 val state_prob_map: Map[legend.datastructures.State,Map[datastructures.State,Double]]
 val state_msg_map: Map[legend.datastructures.State,Map[String,datastructures.State]]
 
+/*
+  TODO: Implement a graph of states as the process
+  add name variable to process
+  implement process loader
+   */
+
+
 //def expected cost
 def expected_cost(): Unit={//Map[String,Double]={
   //val exp_cost:Map[String,Double]

@@ -5,6 +5,7 @@ import legend.events.SimEvent
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 import com.typesafe.scalalogging._
+import legend.main.SimDriver
 import legend.main.SimDriver._
 
 /**
@@ -30,7 +31,6 @@ val delimiter = '\t'
     logger.debug("Loading SimEvent file: " + file_loc)
     val fileStream = getClass.getResourceAsStream(file_loc)
     val lines = Source.fromInputStream(fileStream).getLines
-    //val file_args: ListBuffer[SimEvent] = new ListBuffer[SimEvent]()
     val file_args: ListBuffer[SimEvent] = new ListBuffer[SimEvent]()
 
       lines.foreach(line => {
@@ -39,14 +39,11 @@ val delimiter = '\t'
         val Array(time, event_type, number) = line.split(delimiter).slice(0, 3)
         val args = line.split(delimiter).slice(3, line.split(delimiter).length)
 
-        //Add the correct SimEvent to the list
-        event_type.toLowerCase.trim match {
-          case "spawn" => //file_args += new SimEvent(SimDriver.system_entity,time.toLong,Some(args)) with SpawnEvent
-          case "event_type" | "eventtype" => //do nothing, it's the header
-          case _ => throw InvalidEvent(s"${event_type} is not a valid event type. Please see supported event type documentation.")
-        }
+        //for(number.toInt<-0) {
+        if(!(event_type.trim.toLowerCase=="event_type" | event_type.trim.toLowerCase=="eventtype"))
+          file_args += SimEvent(event_type, SimDriver.system_entity, time.toLong, Some(args))
+       // }
       })
-    logger.debug(s"List generated with ${file_args.size} arguments")
     return file_args.toList
   }
 
@@ -65,4 +62,3 @@ val delimiter = '\t'
   * @param message The error message.
   */
 case class BadlyFormattedFile(message: String = "") extends Exception(message)
-case class InvalidEvent(message: String = "") extends Exception(message)

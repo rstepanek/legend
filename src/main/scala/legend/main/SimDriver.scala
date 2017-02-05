@@ -23,15 +23,23 @@ object SimDriver extends App with LazyLogging{
 
 
 
+  /*Load all Sim Files*/
+  SimInitializer.load_files()
+
+  /*Validate all Sim Files*/
+  //TODO: Finish writing model validator
+
     /*Test the construction of the state object*/
    // val file_data = SimFileReader.load_resource(SimFileReader.tfile)
    // logger.debug(s"Loaded file data:\n${file_data}\nCreating state class...")
    // val test_state = State(file_data)
    // logger.debug(s"State object constructed with the following params\n${test_state.toString}")
 
+  /*
   val file_data:List[SimEvent] = SimEventFileReader.LoadSimEvents("/SimEventSchedule.txt")
   //file_data.map(x => logger.debug(x.toString))
   for(x<-file_data) logger.debug(x.toString)
+  */
   /*
   TODO: Write EventScheduleParser,
   TODO: Implement Main Event Loop
@@ -65,9 +73,9 @@ object SimDriver extends App with LazyLogging{
     * Print the loaded config settings.
     */
   def print_configs(): Unit ={
-    logger.debug("=======>RUNNING WITH CONFIGS:")
-    for((k,v)<-configs.user_configs) logger.debug(k+"\t"+v)
-    logger.debug("=============================")
+    logger.info("=======>RUNNING WITH CONFIGS:")
+    for((k,v)<-configs.runtime_configs) logger.info(k+"\t"+v)
+    logger.info("=============================")
   }
 
   /**

@@ -11,3 +11,6 @@ On_Entrance_Message: Activated.
 On_Exit_Message: Test has ended.
 On_Hibernate_Message: Deactivated.
 Concurrent: True
+onmeta_tags: testingon, one-on
+offmeta_tags: testingoff,one-off
+tags: s1

@@ -27,5 +27,12 @@ object SimEvent{
 
   def apply(etype:String,source:Entity,time:Long,args:Option[Object]*): SimEvent ={
     new SpawnEvent(source,time)
+    //Add the correct SimEvent to the list
+    etype.toLowerCase.trim match {
+      case "spawn" => SpawnEvent(source,time)
+      case _ => throw InvalidEvent(s"${etype} is not a valid event type. Please see supported event type documentation.")
+    }
   }
 }
+
+case class InvalidEvent(message: String = "") extends Exception(message)
