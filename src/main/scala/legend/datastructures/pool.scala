@@ -57,6 +57,7 @@ class Pool(var value: Double, var max:Double=Double.MaxValue, var min:Double=0) 
   * All params subject to change, work in progress.
   *
   * @constructor Create a new ResourceMod with a target pool name, an operation to apply to the pool, value.
+  *              @todo Resource modifcation should be a command. Implement commands.
   * @param poolname The target pool's name as a string.
   * @param operation The operation i.e. *,/,+,-
   * @param value The value by which to modify the pool as a double.

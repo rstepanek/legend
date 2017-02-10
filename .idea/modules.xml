@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/temp.iml" filepath="$PROJECT_DIR$/.idea/modules/temp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/temp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/temp-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/legend.iml" filepath="$PROJECT_DIR$/.idea/modules/legend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/legend-build.iml" filepath="$PROJECT_DIR$/.idea/modules/legend-build.iml" />
     </modules>
   </component>
 </project>

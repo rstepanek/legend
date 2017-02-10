@@ -103,3 +103,10 @@ run
 ~compile
 doc
 exit
+~compile
+run
+~compile
+run
+~compile
+run
+doc

@@ -115,6 +115,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="BadlyFormattedProcessFile.html" title=""></a>
+                        <a href="BadlyFormattedProcessFile.html" title="">
+                          BadlyFormattedProcessFile
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Duration.html" title="A class representing the duration of an event."></a>
                         <a href="Duration.html" title="A class representing the duration of an event.">
                           Duration
@@ -144,7 +150,7 @@
                           Pool
                         </a>
                       </li><li class="current-entities indented2">
-                        <span class="separator"></span>
+                        <a class="object" href="Process$.html" title=""></a>
                         <a class="class" href="" title="A class representing a process which is a collection of states."></a>
                         <a href="" title="A class representing a process which is a collection of states.">
                           Process
@@ -204,34 +210,36 @@
           <div id="content">
             <body class="class type">
       <div id="definition">
-        <div class="big-circle class">c</div>
+        <a href="Process$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
         <p id="owner"><a href="../index.html" class="extype" name="legend">legend</a>.<a href="index.html" class="extype" name="legend.datastructures">datastructures</a></p>
-        <h1>Process<span class="permalink">
+        <h1><a href="Process$.html" title="See companion object">Process</a><span class="permalink">
       <a href="../../legend/datastructures/Process.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
-        <h3><span class="morelinks"></span></h3>
+        <h3><span class="morelinks"><div>
+            Companion <a href="Process$.html" title="See companion object">object Process</a>
+          </div></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Process</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">Process</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="states">states: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>]</span>, <span name="entrance_states">entrance_states: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="prob_trans">prob_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]</span>, <span name="event_trans">event_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A class representing a process which is a collection of states. Each process must have at least on entry state and may have at least one exit state.</p><p>All params subject to change, work in progress.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Finish this class, implement functionality through graphing library.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Make state and process inherit from a common class to allow nested referencing within the class</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -257,7 +265,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="legend.datastructures.Process"><span>Process</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="legend.datastructures.Process"><span>Process</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -278,9 +286,9 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="legend.datastructures.Process#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():legend.datastructures.Process"></a><a id="&lt;init&gt;:Process"></a>
+      <a id="&lt;init&gt;(name:String,states:Set[legend.datastructures.State],entrance_states:Map[legend.datastructures.State,Double],prob_trans:Map[legend.datastructures.State,Map[legend.datastructures.State,Double]],event_trans:Map[legend.datastructures.State,Map[String,Map[legend.datastructures.State,Double]]]):legend.datastructures.Process"></a><a id="&lt;init&gt;:Process"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#&lt;init&gt;():legend.datastructures.Process" title="Permalink">
+      <a href="../../legend/datastructures/Process.html#&lt;init&gt;(name:String,states:Set[legend.datastructures.State],entrance_states:Map[legend.datastructures.State,Double],prob_trans:Map[legend.datastructures.State,Map[legend.datastructures.State,Double]],event_trans:Map[legend.datastructures.State,Map[String,Map[legend.datastructures.State,Double]]]):legend.datastructures.Process" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -289,7 +297,7 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Process</span><span class="params">()</span>
+        <span class="name">Process</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="states">states: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>]</span>, <span name="entrance_states">entrance_states: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="prob_trans">prob_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]</span>, <span name="event_trans">event_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]]</span>)</span>
       </span>
       
       <p class="shortcomment cmt"></p>
@@ -298,61 +306,10 @@ information.</p></span></dd></dl><div class="toggleContainer block">
 
         
 
-        <div class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="legend.datastructures.Process#state_list" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="state_list:scala.collection.mutable.ListBuffer[legend.datastructures.State]"></a><a id="state_list:ListBuffer[State]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#state_list:scala.collection.mutable.ListBuffer[legend.datastructures.State]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">state_list</span><span class="result">: <span class="extype" name="scala.collection.mutable.ListBuffer">ListBuffer</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>]</span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.Process#state_msg_map" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="state_msg_map:scala.collection.mutable.Map[legend.datastructures.State,scala.collection.mutable.Map[String,legend.datastructures.State]]"></a><a id="state_msg_map:Map[State,Map[String,State]]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#state_msg_map:scala.collection.mutable.Map[legend.datastructures.State,scala.collection.mutable.Map[String,legend.datastructures.State]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">state_msg_map</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.collection.mutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="State.html" class="extype" name="legend.datastructures.State">State</a>]]</span>
-      </span>
-      
-      
-    </li><li name="legend.datastructures.Process#state_prob_map" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="state_prob_map:scala.collection.mutable.Map[legend.datastructures.State,scala.collection.mutable.Map[legend.datastructures.State,Double]]"></a><a id="state_prob_map:Map[State,Map[State,Double]]"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#state_prob_map:scala.collection.mutable.Map[legend.datastructures.State,scala.collection.mutable.Map[legend.datastructures.State,Double]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">state_prob_map</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]</span>
-      </span>
-      
-      
-    </li></ol>
-            </div>
+        
 
         <div class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
@@ -440,6 +397,22 @@ information.</p></span></dd></dl><div class="toggleContainer block">
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="legend.datastructures.Process#entrance_states" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entrance_states:Map[legend.datastructures.State,Double]"></a><a id="entrance_states:Map[State,Double]"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Process.html#entrance_states:Map[legend.datastructures.State,Double]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entrance_states</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -456,35 +429,19 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+    </li><li name="legend.datastructures.Process#event_trans" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="event_trans:Map[legend.datastructures.State,Map[String,Map[legend.datastructures.State,Double]]]"></a><a id="event_trans:Map[State,Map[String,Map[State,Double]]]"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#equals(x$1:Any):Boolean" title="Permalink">
+      <a href="../../legend/datastructures/Process.html#event_trans:Map[legend.datastructures.State,Map[String,Map[legend.datastructures.State,Double]]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="legend.datastructures.Process#expected_cost" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="expected_cost():Unit"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#expected_cost():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">expected_cost</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">event_trans</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]]</span>
       </span>
       
       
@@ -526,22 +483,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#hashCode():Int" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -558,6 +499,22 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="legend.datastructures.Process#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Process.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -606,6 +563,38 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="legend.datastructures.Process#prob_trans" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="prob_trans:Map[legend.datastructures.State,Map[legend.datastructures.State,Double]]"></a><a id="prob_trans:Map[State,Map[State,Double]]"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Process.html#prob_trans:Map[legend.datastructures.State,Map[legend.datastructures.State,Double]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prob_trans</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.Process#states" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="states:Set[legend.datastructures.State]"></a><a id="states:Set[State]"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/Process.html#states:Set[legend.datastructures.State]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">states</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -622,22 +611,6 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <span class="permalink">
-      <a href="../../legend/datastructures/Process.html#toString():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
@@ -714,7 +687,15 @@ information.</p></span></dd></dl><div class="toggleContainer block">
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

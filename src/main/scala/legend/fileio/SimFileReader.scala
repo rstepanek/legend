@@ -3,9 +3,10 @@ package legend.fileio
 import java.io.File
 
 import scala.io.Source
-import scala.collection.mutable.Map
+import scala.collection.mutable.{ListBuffer, Map}
 import com.typesafe.scalalogging._
 import legend.datastructures.State
+import legend.utils.converter
 /**
   * A class to represent load various text files into the simulator.
   *
@@ -67,6 +68,28 @@ object SimFileReader extends LazyLogging{
       }
     })
     return collection.immutable.Map() ++ file_args
+  }
+
+  /**
+    * Parses a file object lne by line. Splits each line on a [[key_value_sep]] into the rows of a map(k.toLowerCase.trim->v.trim). Returns a map of all lowercase keys.
+    * @param tfile The location of the key:value file to parse.
+    * @return A new collection.immutable.Map[String,String] object containing the key: value pairs, with both key and value trimmed (key is also all lowercase).
+    */
+  def load_proces_file(tfile: File):  List[List[String]] ={
+    logger.debug("Loading file: " + tfile)
+    val file_args: ListBuffer[List[String]] =  ListBuffer[List[String]]()
+    Source.fromFile(tfile).getLines().foreach(line => {
+      if(line.substring(0,2)!="//") {
+        if(line.substring(0,4).toLowerCase()=="name"){
+          file_args += List("name",line.substring(5,line.length).trim)
+        }
+        else{
+          //split each line on the tokens "=>"and "--"
+          file_args += converter.split_on_delims(line,Array(s"=>",s"--"))
+        }
+      }
+    })
+    return file_args.toList
   }
 
   /**

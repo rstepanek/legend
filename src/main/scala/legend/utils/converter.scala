@@ -1,5 +1,7 @@
 package legend.utils
 
+import scala.collection.mutable.ListBuffer
+
 /**
   * A static class to help convert data structures as needed.
   */
@@ -17,4 +19,21 @@ object converter {
         f.setAccessible(true)
         a + (f.getName -> f.get(cc))
     }
+
+  /**
+    * Split a string along several delimiters into a List[String] and trims whitespace between delimeters.
+    * @param s The string to split.
+    * @param delims An Array[String] containing the delimiter strings.
+    * @return
+    */
+  def split_on_delims(s:String,delims:Array[String]): List[String]={
+    var place_holder = "@@@@@@"
+
+    val return_value:ListBuffer[String] = new ListBuffer[String]()
+    var working_string = s
+    for(delim<-delims){
+      working_string = working_string.replaceAllLiterally(delim,place_holder)
+    }
+    working_string.split(place_holder).toList.map(x => x.trim)
+  }
 }

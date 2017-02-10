@@ -464,6 +464,22 @@ information.</p></span></dd></dl><div class="toggleContainer block">
       </span>
       
       
+    </li><li name="legend.fileio.SimFileReader#load_proces_file" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="load_proces_file(tfile:java.io.File):List[List[String]]"></a><a id="load_proces_file(File):List[List[String]]"></a>
+      <span class="permalink">
+      <a href="../../legend/fileio/SimFileReader$.html#load_proces_file(tfile:java.io.File):List[List[String]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">load_proces_file</span><span class="params">(<span name="tfile">tfile: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Parses a file object lne by line.</p><div class="fullcomment"><div class="comment cmt"><p>Parses a file object lne by line. Splits each line on a <a href="#key_value_sep:Char" class="extmbr" name="legend.fileio.SimFileReader#key_value_sep">key_value_sep</a> into the rows of a map(k.toLowerCase.trim-&gt;v.trim). Returns a map of all lowercase keys.</p></div><dl class="paramcmts block"><dt class="param">tfile</dt><dd class="cmt"><p>The location of the key:value file to parse.</p></dd><dt>returns</dt><dd class="cmt"><p>A new collection.immutable.Map[String,String] object containing the key: value pairs, with both key and value trimmed (key is also all lowercase).</p></dd></dl></div>
     </li><li name="legend.fileio.SimFileReader#load_resource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="load_resource(tfile:java.io.File):scala.collection.immutable.Map[String,String]"></a><a id="load_resource(File):Map[String,String]"></a>
       <span class="permalink">

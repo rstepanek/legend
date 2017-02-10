@@ -131,6 +131,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="BadlyFormattedProcessFile.html" title=""></a>
+                        <a href="BadlyFormattedProcessFile.html" title="">
+                          BadlyFormattedProcessFile
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Duration.html" title="A class representing the duration of an event."></a>
                         <a href="Duration.html" title="A class representing the duration of an event.">
                           Duration
@@ -160,7 +166,7 @@
                           Pool
                         </a>
                       </li><li class="current-entities indented2">
-                        <span class="separator"></span>
+                        <a class="object" href="Process$.html" title=""></a>
                         <a class="class" href="Process.html" title="A class representing a process which is a collection of states."></a>
                         <a href="Process.html" title="A class representing a process which is a collection of states.">
                           Process
@@ -422,6 +428,24 @@
       <p class="shortcomment cmt">A class representing a two dimensional rectangular area in space.</p><div class="fullcomment"><div class="comment cmt"><p>A class representing a two dimensional rectangular area in space. This is a useful construct for restraining certain pools are processes to specific geographical areas.</p><p>All params subject to change, work in progress.
 </p></div><dl class="paramcmts block"><dt class="param">xmin</dt><dd class="cmt"><p>The minimum x (longitude) value of the area.</p></dd><dt class="param">ymin</dt><dd class="cmt"><p>The minimum y (latitude) value of the area.</p></dd><dt class="param">xmax</dt><dd class="cmt"><p>The maximum y (latitude) value of the area.</p></dd><dt class="param">ymax</dt><dd class="cmt"><p>The maximum x (longitude) value of the area.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl></div>
+    </li><li name="legend.datastructures.BadlyFormattedProcessFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BadlyFormattedProcessFileextendsExceptionwithProductwithSerializable"></a><a id="BadlyFormattedProcessFile:BadlyFormattedProcessFile"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/index.html#BadlyFormattedProcessFileextendsExceptionwithProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="BadlyFormattedProcessFile.html">
+              <span class="name">BadlyFormattedProcessFile</span>
+            </a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
     </li><li name="legend.datastructures.Duration" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="DurationextendsProductwithSerializable"></a><a id="Duration:Duration"></a>
       <span class="permalink">
@@ -519,25 +543,25 @@ information.</p></span></dd></dl></div>
       <p class="shortcomment cmt">The primary numerical datastructure of the simulation.</p><div class="fullcomment"><div class="comment cmt"><p>The primary numerical datastructure of the simulation. A pool represents a real world or abstract resource such as fuel, cargo, durability, etc...</p><p>All params subject to change, work in progress.
 </p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.2</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl></div>
-    </li><li name="legend.datastructures.Process" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="ProcessextendsAnyRef"></a><a id="Process:Process"></a>
+    </li><li name="legend.datastructures.Process" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ProcessextendsProductwithSerializable"></a><a id="Process:Process"></a>
       <span class="permalink">
-      <a href="../../legend/datastructures/index.html#ProcessextendsAnyRef" title="Permalink">
+      <a href="../../legend/datastructures/index.html#ProcessextendsProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
         <a title="A class representing a process which is a collection of states." href="Process.html">
               <span class="name">Process</span>
-            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+            </a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="states">states: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>]</span>, <span name="entrance_states">entrance_states: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="prob_trans">prob_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]</span>, <span name="event_trans">event_trans: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<a href="State.html" class="extype" name="legend.datastructures.State">State</a>, <span class="extype" name="scala.Double">Double</span>]]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       <p class="shortcomment cmt">A class representing a process which is a collection of states.</p><div class="fullcomment"><div class="comment cmt"><p>A class representing a process which is a collection of states. Each process must have at least on entry state and may have at least one exit state.</p><p>All params subject to change, work in progress.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Finish this class, implement functionality through graphing library.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Make state and process inherit from a common class to allow nested referencing within the class</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl></div>
     </li><li name="legend.datastructures.ResourceMod" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ResourceModextendsProductwithSerializable"></a><a id="ResourceMod:ResourceMod"></a>
@@ -557,7 +581,7 @@ information.</p></span></dd></dl></div>
       </span>
       
       <p class="shortcomment cmt">A class that represents a modification to an intended Pool.</p><div class="fullcomment"><div class="comment cmt"><p>A class that represents a modification to an intended Pool. THis modification could represent a cost or production of resources.</p><p>All params subject to change, work in progress.
-</p></div><dl class="paramcmts block"><dt class="param">poolname</dt><dd class="cmt"><p>The target pool's name as a string.</p></dd><dt class="param">operation</dt><dd class="cmt"><p>The operation i.e. *,/,+,-</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value by which to modify the pool as a double.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
+</p></div><dl class="paramcmts block"><dt class="param">poolname</dt><dd class="cmt"><p>The target pool's name as a string.</p></dd><dt class="param">operation</dt><dd class="cmt"><p>The operation i.e. *,/,+,-</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value by which to modify the pool as a double.</p></dd></dl><dl class="attributes block"> <dt>Version</dt><dd><p>0.1</p></dd><dt>To do</dt><dd><span class="cmt"><p>Resource modifcation should be a command. Implement commands.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>See <a href="https://github.com/rstepanek/legend" target="_blank">Legend on GitHub</a> for more.
 information.</p></span></dd></dl></div>
     </li><li name="legend.datastructures.Restriction" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="RestrictionextendsAnyRef"></a><a id="Restriction:Restriction"></a>
@@ -667,7 +691,25 @@ information.</p></span></dd></dl></div>
         <div class="values members">
               <h3>Value Members</h3>
               <ol>
-                <li name="legend.datastructures.ResourceConstructer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+                <li name="legend.datastructures.Process" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Process"></a><a id="Process:Process"></a>
+      <span class="permalink">
+      <a href="../../legend/datastructures/index.html#Process" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Process$.html">
+              <span class="name">Process</span>
+            </a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="legend.datastructures.ResourceConstructer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ResourceConstructer"></a><a id="ResourceConstructer:ResourceConstructer"></a>
       <span class="permalink">
       <a href="../../legend/datastructures/index.html#ResourceConstructer" title="Permalink">

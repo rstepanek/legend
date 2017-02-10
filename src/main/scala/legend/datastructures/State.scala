@@ -40,9 +40,10 @@ case class State(name:String, duration:Duration,
  /*
   ("poolrestrictions", classOf[List[poolRestriction]]),//TODO: implement this
 */
-  override def toString: String ={
+  /*override def toString: String ={
     s"name: ${name}, duration: ${duration}, timefreq: ${timefreq}, concurrent: ${concurrent}, require_tags: ${require_tags}, banned_tags: ${banned_tags}, on_start_message: ${on_start_message}, on_exit_message: ${on_exit_message}, on_entrance_message: ${on_activation_message}, on_hibernate_message: ${on_hibernate_message}, onmeta_tags: ${onmeta_tags}, offmeta_tags: ${offmeta_tags}, cost: ${cost}, yields: ${yields}, cost_on_activation: ${cost_on_activation}, yield_on_hibernate: ${yield_on_hibernate}"
   }
+  */
 }
 
 /**

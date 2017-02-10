@@ -1,6 +1,9 @@
 Name: Process:test
-1.00 => State:test
-State:test -1.00-> State:test2
+0.80 => State:test
+0.20 => State:test2
+State:test --1.00  => State:test2
+State:test2 -- test_message -- 1.00 => State:test
+//tokens are =>,--
 //There are 3 types of state transitions
 //1)Entrance transitions denoted by "prob=>state"
 //2)Normal trans i.e. state1-1.00-state2
@@ -11,3 +14,6 @@ State:test -1.00-> State:test2
 //3)Terminal states - leaf nodes that do not connect to other states.
 //3.5)It should be possible to specify that a state should restart the process on exit i.e. state2=>_
 //Note that the classification of a state it purely determined by its position in the process graph and is not a property of the state itself.
+//Edges need to be directed, weighted, and (optionally) labelled
+//--the weight of an edge represents its probability. The weight of all directed edges out of a node should sum to 100
+//--the label represents the message and the weight is the probability of state change on receipt of message
